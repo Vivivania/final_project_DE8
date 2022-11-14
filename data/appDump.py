@@ -12,7 +12,6 @@ if __name__ == "__main__":
     database = 'postgres'
     ip       = 'localhost'
 
-
     try:
 
         engine = create_engine(f"postgresql://{username}:{password}@{ip}:5432/{database}")

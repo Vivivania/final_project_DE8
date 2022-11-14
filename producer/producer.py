@@ -19,9 +19,9 @@ if __name__ == "__main__":
     producer = KafkaProducer(bootstrap_servers=['localhost'], 
                              value_serializer=json_serializer)
     
-    #push data to kafka server with topic "final_project"
+    #push data to kafka server with topic "final-project"
     while True:
         for data in file:
             print(data)
-            producer.send("final_project", data)
-            time.sleep(5)
+            producer.send("final-project", data)
+            time.sleep(8)
